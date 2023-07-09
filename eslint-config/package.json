@@ -1,0 +1,98 @@
+{
+  "name": "@ibjs/eslint-config",
+  "version": "0.0.1",
+  "description": "IbJS's eslint config resets",
+  "author": "IbJS <moxcblack@gmail.com> (https://github.com/Yun-Ruoxi)",
+  "license": "MIT",
+  "homepage": "https://github.com/ibjs/eslint-config",
+  "repository": {
+    "url": "git+https://github.com/ibjs/eslint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ibjs/eslint-config/issues"
+  },
+  "files": [
+    "lib"
+  ],
+  "exports": {
+    ".": "./lib/index.js",
+    "./vue": "./lib/configs/vue.js",
+    "./vue2": "./lib/configs/vue2.js",
+    "./react": "./lib/configs/react.js",
+    "./react-native": "./lib/configs/react-native.js",
+    "./solid": "./lib/configs/solid.js",
+    "./svelte": "./lib/configs/svelte.js",
+    "./astro": "./lib/configs/astro.js",
+    "./prettier": {
+      "import": "./lib/prettier.js",
+      "require": "./lib/prettier.js",
+      "types": "./lib/prettier.d.ts"
+    }
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "lint": "eslint . --fix",
+    "format": "ib prettier-format",
+    "commit": "ib git-commit",
+    "cleanup": "ib cleanup",
+    "update-pkg": "ib update-pkg",
+    "init-git": "ib init-git-hooks",
+    "tsx": "tsx",
+    "update-version": "bumpp --commit --push --tag",
+    "publish-pkg": "pnpm -r publish --access public",
+    "release": "pnpm update-version && pnpm publish-pkg"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "5.59.9",
+    "@typescript-eslint/parser": "5.59.9",
+    "eslint-config-prettier": "8.8.0",
+    "eslint-import-resolver-alias": "1.1.2",
+    "eslint-plugin-astro": "0.27.1",
+    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-jsonc": "2.8.0",
+    "eslint-plugin-n": "16.0.0",
+    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-promise": "6.1.1",
+    "eslint-plugin-react": "7.32.2",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "eslint-plugin-react-native": "4.0.0",
+    "eslint-plugin-solid": "0.12.1",
+    "eslint-plugin-svelte": "2.30.0",
+    "eslint-plugin-vue": "9.14.1",
+    "prettier": "2.8.8",
+    "prettier-plugin-astro": "0.10.0",
+    "prettier-plugin-svelte": "2.10.1"
+  },
+  "devDependencies": {
+    "@ibjs/cli": "0.0.1",
+    "@types/eslint": "8.40.1",
+    "@types/react": "18.2.11",
+    "@types/react-dom": "18.2.4",
+    "astro": "2.6.2",
+    "bumpp": "9.1.1",
+    "eslint": "8.42.0",
+    "eslint-plugin-ibjs": "link:",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "simple-git-hooks": "2.8.1",
+    "solid-js": "1.7.6",
+    "svelte": "3.59.1",
+    "typescript": "5.1.3",
+    "vue": "3.3.4"
+  },
+  "peerDependencies": {
+    "eslint": ">=7.4.0",
+    "typescript": ">=4.8.0"
+  },
+  "simple-git-hooks": {
+    "commit-msg": "pnpm ib git-commit-verify",
+    "pre-commit": "pnpm ib lint-staged"
+  },
+  "main": ".eslintrc.js",
+  "directories": {
+    "example": "examples",
+    "lib": "lib"
+  }
+}

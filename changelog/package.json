@@ -1,0 +1,66 @@
+{
+  "name": "@ibjs/changelog",
+  "version": "0.0.1",
+  "description": "generate changelog form git tags and commits for github",
+  "author": "IbJS <moxcblack@gmail.com> (https://github.com/Yun-Ruoxi)",
+  "license": "MIT",
+  "homepage": "https://github.com/ibjs/changelog",
+  "repository": {
+    "url": "git+https://github.com/ibjs/changelog.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ibjs/changelog/issues"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "pnpm typecheck && unbuild",
+    "lint": "eslint . --fix",
+    "format": "ib prettier-write",
+    "commit": "ib git-commit",
+    "cleanup": "ib cleanup",
+    "ncu": "ib ncu",
+    "publish-pkg": "pnpm -r publish --access public",
+    "typecheck": "tsc --noEmit",
+    "release": "ib release && pnpm build && pnpm publish-pkg"
+  },
+  "dependencies": {
+    "cli-progress": "3.12.0",
+    "convert-gitmoji": "0.1.3",
+    "dayjs": "1.11.8",
+    "execa": "7.1.1",
+    "ofetch": "1.1.0"
+  },
+  "devDependencies": {
+    "@ibjs/cli": "0.0.1",
+    "@types/cli-progress": "3.11.0",
+    "@types/node": "20.3.0",
+    "eslint": "8.42.0",
+    "@ibjs/eslint-config": "0.0.1",
+    "simple-git-hooks": "2.8.1",
+    "tsx": "3.12.7",
+    "typescript": "5.1.3",
+    "unbuild": "1.2.1"
+  },
+  "simple-git-hooks": {
+    "commit-msg": "pnpm ib git-commit-verify",
+    "pre-commit": "pnpm typecheck && pnpm ib lint-staged"
+  },
+  "ibjs": {
+    "useIbToken": true
+  }
+}
