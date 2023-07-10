@@ -1,6 +1,6 @@
 {
   "name": "@ibjs/cli",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "IbJS's command line tools",
   "author": "Yun-Ruoxi <moxcblack@gmail.com> (https://github.com/Yun-Ruoxi)",
   "license": "MIT",
@@ -43,7 +43,7 @@
     "release": "ib release && pnpm build && pnpm publish-pkg"
   },
   "dependencies": {
-    "@ibjs/changelog": "0.0.1",
+    "@ibjs/changelog": "^0.0.2",
     "bumpp": "9.1.1",
     "c12": "1.4.1",
     "cac": "6.7.14",
