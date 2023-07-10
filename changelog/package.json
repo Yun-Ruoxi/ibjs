@@ -47,7 +47,7 @@
   },
   "devDependencies": {
     "@ibjs/changelog": "^0.0.2",
-    "@ibjs/eslint-config": "0.0.1",
+    "@ibjs/eslint-config": "^0.0.2",
     "@types/cli-progress": "3.11.0",
     "@types/node": "20.3.0",
     "eslint": "8.42.0",

@@ -1,6 +1,6 @@
 {
   "name": "@ibjs/vite-plugin-vue-page-route",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A vite plugin for vue, auto generate route info by page",
   "author": "Yun-Ruoxi <moxcblack@gmail.com> (https://github.com/Yun-Ruoxi)",
   "license": "MIT",
@@ -56,14 +56,14 @@
     "micromatch": "4.0.5"
   },
   "devDependencies": {
-    "@ibjs/cli": "0.0.1",
+    "@ibjs/cli": "^0.0.5",
     "@types/fs-extra": "11.0.1",
     "@types/micromatch": "4.0.2",
     "@types/node": "20.2.5",
     "@types/throttle-debounce": "5.0.0",
     "esbuild-register": "3.4.2",
     "eslint": "8.42.0",
-    "@ibjs/eslint-config": "0.0.1",
+    "@ibjs/eslint-config": "^0.0.2",
     "simple-git-hooks": "2.8.1",
     "tsx": "3.12.7",
     "typescript": "5.1.3",
