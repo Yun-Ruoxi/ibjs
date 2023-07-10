@@ -26,8 +26,8 @@ devDependencies:
     specifier: ^0.0.2
     version: 0.0.2
   '@ibjs/eslint-config':
-    specifier: 0.0.1
-    version: 0.0.1(eslint@8.42.0)(svelte@4.0.5)(typescript@5.1.3)
+    specifier: ^0.0.2
+    version: 0.0.2(eslint@8.42.0)(svelte@4.0.5)(typescript@5.1.3)
   '@types/cli-progress':
     specifier: 3.11.0
     version: 3.11.0
@@ -555,8 +555,8 @@ packages:
       ofetch: 1.1.0
     dev: true
 
-  /@ibjs/eslint-config@0.0.1(eslint@8.42.0)(svelte@4.0.5)(typescript@5.1.3):
-    resolution: {integrity: sha512-3otr+Z9OuYj0t+xv/29pQ7/1KwqLRV4mYSCILhGFkqMRqfeyavtJBJs/xScHma3TqtwtsnpC8dzLZDHPNEoChQ==}
+  /@ibjs/eslint-config@0.0.2(eslint@8.42.0)(svelte@4.0.5)(typescript@5.1.3):
+    resolution: {integrity: sha512-lykFy+8h/cAWSVfBPQ4QY9Pxk+buNpkhVwcyhVHS77H7XXAx4LC+uoBz2aqnZpiwvtP2ankSB+R72H7QiO13aA==}
     peerDependencies:
       eslint: '>=7.4.0'
       typescript: '>=4.8.0'
