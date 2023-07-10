@@ -1,6 +1,6 @@
 {
   "name": "@ibjs/changelog",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "generate changelog form git tags and commits for github",
   "author": "IbJS <moxcblack@gmail.com> (https://github.com/Yun-Ruoxi)",
   "license": "MIT",
