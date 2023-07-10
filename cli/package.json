@@ -1,12 +1,16 @@
 {
   "name": "@ibjs/cli",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "IbJS's command line tools",
-  "author": "Yun-Ruoxi <moxcblack@gmail.com> (https://github.com/Yun-Ruoxi)",
+  "author": {
+    "name": "IB",
+    "email": "moxcblack@gmail.com",
+    "url": "https://github.com/Yun-Ruoxi"
+  },
   "license": "MIT",
   "homepage": "https://github.com/ibjs/cli",
   "repository": {
-    "url": "git+https://github.com/ibjs/cli.git"
+    "url": "https://github.com/ibjs/cli.git"
   },
   "bugs": {
     "url": "https://github.com/ibjs/cli/issues"
@@ -25,7 +29,6 @@
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "bin": {
-    "ibjs": "dist/index.cjs",
     "ib": "dist/index.cjs"
   },
   "files": [
@@ -40,7 +43,8 @@
     "ncu": "ib ncu",
     "publish-pkg": "pnpm -r publish --access public",
     "typecheck": "tsc --noEmit",
-    "release": "ib release && pnpm build && pnpm publish-pkg"
+    "release": "ib release && pnpm build && pnpm publish-pkg",
+    "prepare": "pnpm -r run stub"
   },
   "dependencies": {
     "@ibjs/changelog": "^0.0.3",
@@ -59,7 +63,7 @@
     "@ibjs/cli": "link:",
     "@types/node": "20.3.1",
     "eslint": "8.42.0",
-    "@ibjs/eslint-config": "^0.0.2",
+    "@ibjs/eslint-config": "^0.0.3",
     "simple-git-hooks": "2.8.1",
     "tsx": "3.12.7",
     "typescript": "5.1.3",

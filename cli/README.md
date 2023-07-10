@@ -1,6 +1,6 @@
 # @ibjs/cli
 
-IbJS 的命令行工具
+ibjs 的命令行工具
 
 ## 用法
 
@@ -31,7 +31,6 @@ pnpm ib -h
 | prettier-write        | 执行 prettier --write 格式化                                       |
 | lint-staged           | 执行 lint-staged                                                   |
 | changelog             | 根据两次 tag 生成 changelog (--total: 根据所有 tag 生成 changelog) |
-| release               | 发布：更新版本号、生成 changelog、提交代码                         |
 
 ## 更多自定义配置
 

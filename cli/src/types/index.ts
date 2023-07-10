@@ -42,7 +42,7 @@ export interface CliOption {
    */
   lintStagedConfig: Record<string, string | string[]>;
   /**
-   * use ibjs token
+   * use ib token
    */
   useIbToken: boolean;
 }

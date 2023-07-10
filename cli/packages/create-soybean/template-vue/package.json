@@ -16,12 +16,12 @@
     "vue-router": "^4.2.2"
   },
   "devDependencies": {
-    "@ibjs/cli": "^0.0.6",
+    "@ibjs/cli": "^0.0.7",
     "@types/node": "^20.3.1",
     "@vitejs/plugin-vue": "^4.2.3",
     "@vitejs/plugin-vue-jsx": "^3.0.1",
     "eslint": "^8.43.0",
-    "@ibjs/eslint-config": "^0.0.2",
+    "@ibjs/eslint-config": "^0.0.3",
     "npm-run-all": "^4.1.5",
     "typescript": "~5.1.3",
     "vite": "^4.3.9",

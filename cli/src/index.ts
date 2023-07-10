@@ -8,6 +8,7 @@ import {
   initSimpleGitHooks,
   ncu,
   prettierWrite,
+  eslintPretter,
   execLintStaged,
   genChangelog,
   release
@@ -19,9 +20,13 @@ type Command =
   | 'git-commit'
   | 'git-commit-verify'
   | 'cleanup'
+  | 'init-git-hooks'
   | 'init-simple-git-hooks'
+  | 'update-pkg'
   | 'ncu'
+  | 'prettier-format'
   | 'prettier-write'
+  | 'eslint-prettier'
   | 'lint-staged'
   | 'changelog'
   | 'release';
@@ -97,6 +102,40 @@ async function setupCli() {
     release: {
       desc: '发布：更新版本号、生成changelog、提交代码',
       action: release
+    },
+    /**
+     * @deprecated
+     */
+    'init-git-hooks': {
+      desc: '该命令已废弃，请使用 init-simple-git-hooks',
+      action: () => {
+        initSimpleGitHooks(cliOptions.cwd);
+      }
+    },
+    /**
+     * @deprecated
+     */
+    'update-pkg': {
+      desc: '该命令已废弃，请使用 ncu',
+      action: () => {
+        ncu(cliOptions.ncuCommandArgs);
+      }
+    },
+    /**
+     * @deprecated
+     */
+    'prettier-format': {
+      desc: '该命令已废弃，请使用 prettier-write',
+      action: () => {
+        prettierWrite(cliOptions.prettierWriteGlob);
+      }
+    },
+    /**
+     * @deprecated
+     */
+    'eslint-prettier': {
+      desc: '该命令已废弃',
+      action: eslintPretter
     }
   };
 
