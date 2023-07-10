@@ -1,6 +1,6 @@
 {
   "name": "@ibjs/eslint-config",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "IbJS's eslint config resets",
   "author": "IbJS <moxcblack@gmail.com> (https://github.com/Yun-Ruoxi)",
   "license": "MIT",
@@ -90,9 +90,7 @@
     "commit-msg": "pnpm ib git-commit-verify",
     "pre-commit": "pnpm ib lint-staged"
   },
-  "main": ".eslintrc.js",
-  "directories": {
-    "example": "examples",
-    "lib": "lib"
+  "ibjs": {
+    "useIbToken": true
   }
 }
