@@ -1,5 +1,5 @@
 {
-  "name": "create-ibjs",
+  "name": "create-ib",
   "version": "0.0.1",
   "description": "IbJS's command line to create different project templates",
   "author": {
@@ -12,7 +12,7 @@
     "registry": "https://registry.npmjs.org/"
   },
   "bin": {
-    "create-ibjs": "dist/index.mjs"
+    "create-ib": "dist/index.mjs"
   },
   "files": [
     "dist"

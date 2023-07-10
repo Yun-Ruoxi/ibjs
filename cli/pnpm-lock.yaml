@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@ibjs/changelog':
-        specifier: ^0.0.2
-        version: 0.0.2
+        specifier: ^0.0.3
+        version: 0.0.3
       bumpp:
         specifier: 9.1.1
         version: 9.1.1
@@ -578,8 +578,8 @@ packages:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
     dev: true
 
-  /@ibjs/changelog@0.0.2:
-    resolution: {integrity: sha512-IzUyNVa0tpENO/jQu/V83aoAfjPvDtLefVIc2Byk+AJIWYTGo+KPjSvGEUN72SannAiWF7sCA8IveS+GH9JPYQ==}
+  /@ibjs/changelog@0.0.3:
+    resolution: {integrity: sha512-vJBkRrbZFHgwm2e8TjCCTDeuwQAxnHaN/M2X3NmOn0Qq9Xlyop9XiB7a8EXwgIJTBWuZS0b/hCJbmd5IK5vnUA==}
     dependencies:
       cli-progress: 3.12.0
       convert-gitmoji: 0.1.3
