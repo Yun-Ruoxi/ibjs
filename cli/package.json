@@ -1,6 +1,6 @@
 {
   "name": "@ibjs/cli",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "IbJS's command line tools",
   "author": {
     "name": "IB",
