@@ -46,11 +46,11 @@
     "ofetch": "1.1.0"
   },
   "devDependencies": {
-    "@ibjs/cli": "0.0.1",
+    "@ibjs/changelog": "^0.0.2",
+    "@ibjs/eslint-config": "0.0.1",
     "@types/cli-progress": "3.11.0",
     "@types/node": "20.3.0",
     "eslint": "8.42.0",
-    "@ibjs/eslint-config": "0.0.1",
     "simple-git-hooks": "2.8.1",
     "tsx": "3.12.7",
     "typescript": "5.1.3",
