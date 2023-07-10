@@ -1,6 +1,6 @@
 {
   "name": "@ibjs/cli",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "IbJS's command line tools",
   "author": "Yun-Ruoxi <moxcblack@gmail.com> (https://github.com/Yun-Ruoxi)",
   "license": "MIT",

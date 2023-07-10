@@ -66,7 +66,7 @@
     "prettier-plugin-svelte": "2.10.1"
   },
   "devDependencies": {
-    "@ibjs/cli": "^0.0.5",
+    "@ibjs/cli": "^0.0.6",
     "@types/eslint": "8.40.1",
     "@types/react": "18.2.11",
     "@types/react-dom": "18.2.4",

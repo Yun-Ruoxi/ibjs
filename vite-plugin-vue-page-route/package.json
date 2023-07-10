@@ -56,7 +56,7 @@
     "micromatch": "4.0.5"
   },
   "devDependencies": {
-    "@ibjs/cli": "^0.0.5",
+    "@ibjs/cli": "^0.0.6",
     "@types/fs-extra": "11.0.1",
     "@types/micromatch": "4.0.2",
     "@types/node": "20.2.5",

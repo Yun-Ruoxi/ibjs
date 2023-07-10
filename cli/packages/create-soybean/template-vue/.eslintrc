@@ -1,5 +1,5 @@
 {
-  "extends": "ibjs/vue",
+  "extends": "ib/vue",
   "overrides": [
     {
       "files": ["*.vue"],

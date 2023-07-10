@@ -16,7 +16,7 @@
     "vue-router": "^4.2.2"
   },
   "devDependencies": {
-    "@ibjs/cli": "^0.0.5",
+    "@ibjs/cli": "^0.0.6",
     "@types/node": "^20.3.1",
     "@vitejs/plugin-vue": "^4.2.3",
     "@vitejs/plugin-vue-jsx": "^3.0.1",

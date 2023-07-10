@@ -28,7 +28,7 @@
     "prepare": "pnpm -r run stub"
   },
   "devDependencies": {
-    "@ibjs/cli": "^0.0.5",
+    "@ibjs/cli": "^0.0.6",
     "eslint": "8.42.0",
     "@ibjs/eslint-config": "^0.0.2",
     "simple-git-hooks": "2.8.1",
