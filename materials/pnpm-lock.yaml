@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@ibjs/cli':
-        specifier: ^0.0.5
-        version: 0.0.5
+        specifier: ^0.0.6
+        version: 0.0.6
       '@ibjs/eslint-config':
         specifier: ^0.0.2
         version: 0.0.2(eslint@8.42.0)(svelte@4.0.5)(typescript@5.1.3)
@@ -705,8 +705,8 @@ packages:
       ofetch: 1.1.0
     dev: true
 
-  /@ibjs/cli@0.0.5:
-    resolution: {integrity: sha512-GUqVXUH/0J0GEl/g7fsq21h5HsA9VeDqbyBqMxiHB+VyXekHAxj4iKVhNJu4Bf6PxwCHsK7AWwSpiCn/jyPMsA==}
+  /@ibjs/cli@0.0.6:
+    resolution: {integrity: sha512-IfQ7HptAqRs6g4FG6y3XLyzXv2eFhlLFljGCcxydmo3Y6lwCFnDF46S/E3OohcRXfV7QP0hfMH0Wss8B4jKv3w==}
     hasBin: true
     dependencies:
       '@ibjs/changelog': 0.0.2
