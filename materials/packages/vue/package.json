@@ -1,6 +1,6 @@
 {
   "name": "@ibjs/vue-materials",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "vue2 and vue3 components material",
   "author": "IbJS <moxcblack@gmail.com> (https://github.com/Yun-Ruoxi)",
   "license": "MIT",
@@ -21,7 +21,7 @@
     "typecheck": "vue-tsc --noEmit",
     "dts": "vue-tsc -p tsconfig.build.json",
     "rollup-dts": "api-extractor run --local --verbose",
-    "clean-dts": "rm -rf ./lib",
+    "clean-dts": "rimraf ./lib",
     "test": "npm run test3",
     "test2": "vue-demi-switch 2 vue2",
     "test3": "vue-demi-switch 3"
